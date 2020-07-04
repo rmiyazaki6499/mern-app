@@ -1,0 +1,34 @@
+{
+  "name": "mern-app",
+  "version": "1.0.0",
+  "description": "template app for deploying to AWS EC2",
+  "main": "app.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-mongo-sanitize": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmiyazaki6499/mern-app.git"
+  },
+  "keywords": [
+    "mern",
+    "aws",
+    "ec2",
+    "mongodb",
+    "react",
+    "express"
+  ],
+  "author": "Ryuichi Miyazaki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rmiyazaki6499/mern-app/issues"
+  },
+  "homepage": "https://github.com/rmiyazaki6499/mern-app#readme"
+}
