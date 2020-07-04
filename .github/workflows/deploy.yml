@@ -1,4 +1,4 @@
-name: Algo Academy Deploy using AWS SSM Send-Command 
+name: Deploy using AWS SSM Send-Command 
 
 on:
     push:
@@ -18,6 +18,6 @@ jobs:
                   aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY  }}
                   aws-region: us-east-2
                   instance-ids: ${{ secrets.INSTANCE_ID  }}
-                  comment: Deploy algoacademy master 
+                  comment: Deploy master 
                   working-directory: /home/ubuntu/mern-app
                   command: /bin/sh deploy.sh
