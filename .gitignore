@@ -15,7 +15,7 @@ package-lock.json
 /coverage
 
 # environment
-.env
+# .env
 
 # production
 /client/build

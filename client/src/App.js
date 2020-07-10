@@ -1,12 +1,32 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+    const [response, setResponse] = useState('')
+    useEffect(() =>{
+        async function checkAPIRoute() {
+            try {
+                const host = process.env.REACT_APP_HOST || "http://localhost:5000"
+                const response = await fetch(
+                    `${host}/api`
+                )
+                if (response.status === 200) {
+                    setResponse("a Success!!!")
+                } else {
+                    setResponse("Oops, something went wrong...")
+                }
+            } catch (err) {
+                setResponse("Oops, something went wrong...")
+            }
+        }
+        checkAPIRoute()
+    }, [])
+
   return (
     <div className="App">
       <header className="App-header">
-	  <h1>PINK SHORTS</h1>
+        <h1>Mern-app</h1>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,8 +37,9 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
         </a>
+        <h1>The API call is...</h1>
+          <h2>{response}</h2>
       </header>
     </div>
   );
