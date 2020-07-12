@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-    const [response, setResponse] = useState('')
+    const [response, setResponse] = useState('Oops, something went wrong...')
     useEffect(() =>{
         async function checkAPIRoute() {
             try {
@@ -13,15 +13,13 @@ function App() {
                 )
                 if (response.status === 200) {
                     setResponse("a Success!!!")
-                } else {
-                    setResponse("Oops, something went wrong...")
                 }
             } catch (err) {
                 setResponse("Oops, something went wrong...")
             }
         }
         checkAPIRoute()
-    }, [])
+    }, [response])
 
   return (
     <div className="App">
