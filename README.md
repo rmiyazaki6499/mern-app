@@ -1,4 +1,4 @@
-![MERN Logo](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.3ritechnologies.com%2Fcourse%2Fmern-stack-training-in-pune%2F&psig=AOvVaw2UcHidrBrM6hlEMjw3NG9T&ust=1594852838316000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLiz6oLozeoCFQAAAAAdAAAAABAD)
+![MERN Logo](https://www.3ritechnologies.com/wp-content/uploads/2019/11/MERN-Stack-Training-in-Pune-e1575022427244.png)
 
 # MERN App
 
