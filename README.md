@@ -15,10 +15,6 @@ This repository contains a simple MERN app as part of the **Deploying a Producti
 
 ## Project Layout
   
-   If you already have a working project go ahead and move on to either [Creating your AWS Account](#create-an-aws-account) or [Creating your EC2 Instance](#create-an-aws-ec2-instance).
-  
-  Otherwise feel free to use the generic MERN project I created on Github [here](https://github.com/rmiyazaki6499/mern-app.git).
-  
   Here is the project layout:
   
   ```
