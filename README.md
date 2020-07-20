@@ -6,7 +6,6 @@ This repository contains a simple MERN app as part of the **Deploying a Producti
 
 ## Table of Contents
 
-- [Introduction](#introduction)
 - [Project Layout](#project-layout)
 - [Setting up the Mern-app project](#setting-up-the-mern-app-project)
 - [Authors](#authors)
