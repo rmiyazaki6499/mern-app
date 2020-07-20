@@ -93,7 +93,7 @@ Now if you go to http://localhost:5000 you should see the same React page from e
 [Back to Table of Contents](#table-of-contents)
 
 
-## Authors
+## Author
 
 Created by:
 
