@@ -8,6 +8,11 @@ This repository contains a simple MERN app as part of the **Deploying a Producti
 
 - [Project Layout](#project-layout)
 - [Setting up the Mern-app project](#setting-up-the-mern-app-project)
+- [Setting up the Mern-app project with Docker](#setting-up-the-mern-app-project-with-docker)
+  - [Install Docker](#install-docker)
+  - [Build and Run the Container](#build-and-run-the-container)
+  - [Cleaning up the Container and Image](#cleaning-up-the-container-and-image)
+- [Setting up the Mern-app project manually](#setting-up-the-mern-app-project-manually)
 - [Authors](#authors)
 
 ---
@@ -21,15 +26,18 @@ This repository contains a simple MERN app as part of the **Deploying a Producti
    |__ client/ (React App Frontend)
       |__ public/
       |__ src/
+   |__ scripts/
    |__ app.js (Express Backend)
    |__ package.json
+   |__ Dockerfile
+   |__ docker-compose.yml
   
   ```
  
   
   ---
   
-  ## Setting up the Mern-app project
+  ## Setting up the `mern-app` project
   
   I will be using a generic MERN (MongoDb, Express, React, Node.js) stack app which uses a proxy with the Express server.
   The app simply displays the default React app components however, I have added a simple API which the frontend calls to confirm that the API call is successfull.
@@ -38,11 +46,69 @@ This repository contains a simple MERN app as part of the **Deploying a Producti
   ```
   $ git clone https://github.com/rmiyazaki6499/mern-app.git
   ```
-  Next, we will install dependencies for both Express and React:
+  
+  ### Setting up the `mern-app` project with Docker
+
+  For those that are not interested in setting up the project manually or would simply not have to worry about downloading python and its dependencies, I have      created a Dockerfile and docker-compose.yml file to help create a container with everything you would need to run the **django-app**.
+
+  #### Install Docker
+
+  To make this as easy as possible, we will be using *Docker Compose* to creat our container.
+
+  - If you do not have Docker yet, start by downloading it if you are on a Mac or Windows:
+  https://www.docker.com/products/docker-desktop
+
+  - Or if you are on a Linux Distribution follow the directions here:
+  https://docs.docker.com/compose/install/
+
+  - To confirm you have Docker Compose, open up your terminal and run the command below:
+
   ```
-  $ cd mern-app
+  $ docker-compose --version
+  docker-compose version 1.26.2, build eefe0d31
+  ```
+  
+  - Go into the project directory to build and run the container with:
+
+  ```
+  $ cd mern-app/
+  $ docker-compose up --build
+  ```
+  
+  Navigate to http://localhost:5000 to view the site on the local server.
+It should look something like this:
+
+  ![mern-app_react_success](https://user-images.githubusercontent.com/41876764/87258255-09924080-c457-11ea-97bd-40ad8784a00b.png)
+  
+  #### Cleaning up the Container and Image
+
+  To stop the container from running, use `<Ctrl-C>` twice.
+  To close down the container use the command:
+
+  ```
+  $ docker-compose down
+  ```
+  Then to clean up the container and image which we are no longer using use the command:
+
+  ```
+  $ docker system prune -fa
+  ```
+
+  Confirm that the container and image is no longer there with:
+
+  ```
+  $ docker system df -v
+  ```
+  
+  ### Setting up the `mern-app` project manually
+  
+  If you either did not want to use Docker or was curious to build the mern-app manually follow the directions below.
+  
+  Start by installing the dependencies for both Express and React:
+  ```
+  $ cd mern-app/
   $ npm install
-  $ cd client
+  $ cd client/
   $ npm install
   ```
   
