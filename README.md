@@ -49,7 +49,7 @@ This repository contains a simple MERN app as part of the **Deploying a Producti
   
   ## Setting up the `mern-app` project with Docker
 
-  For those that are not interested in setting up the project manually or would simply not have to worry about downloading python and its dependencies, I have      created a Dockerfile and docker-compose.yml file to help create a container with everything you would need to run the **django-app**.
+  For those that are not interested in setting up the project manually or would simply not have to worry about downloading node.js and its dependencies, I have      created a Dockerfile and docker-compose.yml file to help create a container with everything you would need to run the **mern-app**.
 
   ### Install Docker
 
