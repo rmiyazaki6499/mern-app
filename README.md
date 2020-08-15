@@ -47,11 +47,11 @@ This repository contains a simple MERN app as part of the **Deploying a Producti
   $ git clone https://github.com/rmiyazaki6499/mern-app.git
   ```
   
-  ### Setting up the `mern-app` project with Docker
+  ## Setting up the `mern-app` project with Docker
 
   For those that are not interested in setting up the project manually or would simply not have to worry about downloading python and its dependencies, I have      created a Dockerfile and docker-compose.yml file to help create a container with everything you would need to run the **django-app**.
 
-  #### Install Docker
+  ### Install Docker
 
   To make this as easy as possible, we will be using *Docker Compose* to creat our container.
 
@@ -80,7 +80,7 @@ It should look something like this:
 
   ![mern-app_react_success](https://user-images.githubusercontent.com/41876764/87258255-09924080-c457-11ea-97bd-40ad8784a00b.png)
   
-  #### Cleaning up the Container and Image
+  ### Cleaning up the Container and Image
 
   To stop the container from running, use `<Ctrl-C>` twice.
   To close down the container use the command:
@@ -100,7 +100,7 @@ It should look something like this:
   $ docker system df -v
   ```
   
-  ### Setting up the `mern-app` project manually
+  ## Setting up the `mern-app` project manually
   
   If you either did not want to use Docker or was curious to build the mern-app manually follow the directions below.
   
