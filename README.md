@@ -74,6 +74,8 @@ This repository contains a simple MERN app as part of the **Deploying a Producti
   $ cd mern-app/
   $ docker-compose up --build
   ```
+
+  **This may take a few moments**
   
   Navigate to http://localhost:5000 to view the site on the local server.
 It should look something like this:

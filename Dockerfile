@@ -5,8 +5,8 @@ WORKDIR /app
 
 COPY package.json package.json
 COPY client/package.json client/package.json
-RUN npm install 
-RUN cd client/ && npm install
+RUN npm install --silent 
+RUN cd client/ && npm install --silent
 
 COPY . .
 
