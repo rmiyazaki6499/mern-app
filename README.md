@@ -34,13 +34,14 @@ This repository contains a simple MERN app as part of the **Deploying a Producti
   
   ```
  
+ ## Project Structure
+ 
+ I will be using a generic MERN (MongoDb, Express, React, Node.js) stack app which uses a proxy with the Express server.
+ The app simply displays the default React app components however, I have added a simple API which the frontend calls to confirm that the API call is successfull.
   
   ---
   
   ## Setting up the `mern-app` project
-  
-  I will be using a generic MERN (MongoDb, Express, React, Node.js) stack app which uses a proxy with the Express server.
-  The app simply displays the default React app components however, I have added a simple API which the frontend calls to confirm that the API call is successfull.
   
   Start by cloning the project with the command:
   ```
