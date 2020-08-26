@@ -36,8 +36,13 @@ This repository contains a simple MERN app as part of the **Deploying a Producti
  
  ## Project Structure
  
- I will be using a generic MERN (MongoDb, Express, React, Node.js) stack app which uses a proxy with the Express server.
- The app simply displays the default React app components however, I have added a simple API which the frontend calls to confirm that the API call is successfull.
+   The app simply displays the default React app components. However, I have added a simple API which the frontend calls to confirm that the API call is successfull.
+ 
+ I will be using a generic MERN (MongoDB, Express, React, Node.js) stack app which uses a proxy with the Express server.
+ 
+ What this means is that instead of having two separate servers running (One for the frontend (React) and the other for the backend (Express)) we will `build` our React project into a directory of static files which Express will then serve. 
+ 
+ The benefit of this is this allows you to manage the project in one collective repo/project and it removes the barrier of having to deal with any CORS issues of your backend not recognizing the frontend requests.
   
   ---
   
