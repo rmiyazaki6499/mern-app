@@ -5,7 +5,6 @@ services:
     build: '.'
     env_file:
       - 'client/.env'
-    image: 'rmiyazaki6499/mern-app'
     tty: true
     stdin_open: true
     ports:
